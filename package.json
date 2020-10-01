@@ -1,0 +1,31 @@
+{
+  "name": "webpack-boilerplate",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/bundle.min.js",
+  "contributors": [
+    "Jimmi Elofsson <jimmi.elofsson@aller.com>"
+  ],
+  "dependencies": {
+    "dotenv-webpack": "^2.0.0",
+    "path": "^0.12.7",
+    "webpack": "^4.44.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.11.6",
+    "@babel/preset-env": "^7.11.5",
+    "babel-loader": "^8.1.0",
+    "eslint": "^7.9.0",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-import": "^2.22.0",
+    "webpack-cli": "^3.3.12"
+  },
+  "scripts": {
+    "test:quality": "eslint .",
+    "build": "webpack --env.ENV=prod --config webpack.config.js",
+    "watch": "webpack --watch --env.ENV=dev --config webpack.config.js"
+  },
+  "author": "",
+  "license": "ISC"
+}
